@@ -1,0 +1,913 @@
+:root {
+   --color1: #2196F3;
+   --color2: #212121;
+   --color3: #757575;
+   --color4: #2F303A;
+   --color5: #FFFFFF;
+   --color6: rgba(255, 255, 255, 0.6);
+   --time: 250ms;
+   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*-------------------------------------------------Fuente Body--------------------------------------*/
+
+body {
+   font-family:
+      'Roboto', sans-serif;
+}
+
+/*--------------------------------------------------logo----------------------------------------------*/
+.logo {
+   font-family: 'Raleway', sans-serif;
+   font-size: 26px;
+   font-weight: 700;
+   color: var(--color1);
+   text-decoration: none;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   width: 1200px;
+   margin: 0 auto;
+}
+
+a {
+   color: currentColor;
+   text-decoration: none;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+/*----------------------------------------------Enlacees de navegacion---------------------------------------*/
+.navegation {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   color: var(--color2);
+   height: 80px;
+   padding-top: 32px;
+   transition: color 250ms var(--transition-timing-function);
+}
+
+.link-actual {
+   border-bottom: solid var(--color1);
+   border-radius: 2px;
+}
+
+.navegation:hover {
+   color: var(--color1);
+
+}
+
+.active {
+   color: #2196F3;
+}
+
+/*-----------------------------------------------contact-----------------------------------------------------*/
+.contact-section>.email>* {
+   color: var(--color3);
+   font-weight: 500;
+   font-size: 14px;
+
+   line-height: 1.14;
+   text-decoration: none;
+   transition: color var(--time) var(--transition-timing-function)
+}
+
+.icon-contant {
+   transition: color var(--time) var(--transition-timing-function);
+}
+
+
+
+
+
+.contact-section {
+   list-style: none;
+}
+
+/*-------------------------------------------------titulo----------------------------------------------------*/
+.titulo {
+   background-color: var(--color4);
+
+   background-image: linear-gradient(to bottom, #2F303A66, #2F303A66), url(../images/Imagen-fondo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.h1 {
+   color: var(--color5);
+   font-size: 44px;
+   font-weight: 900;
+   text-align: center;
+   line-height: 1.36;
+}
+
+.boton1 {
+   font-weight: 700;
+   font-size: 16px;
+   color: var(--color5);
+   background-color: var(--color1);
+   line-height: 1.87;
+   font-family: 'Roboto', sans-serif;
+   cursor: pointer
+}
+
+.ventajas {
+   padding: 94px 0;
+}
+
+.ventajas h3 {
+   color: var(--color2);
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 1.14;
+}
+
+.ventajas p {
+   font-weight: 400;
+   font-size: 14px;
+   color: var(--color3);
+   line-height: 1.71;
+}
+
+.ventajas h3 {
+   list-style: none;
+}
+
+
+/*-----------------------------------------A que nos dedicamos--------------------------------------------*/
+.dedicamos h2 {
+   color: var(--color2);
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.16;
+   margin-bottom: 50px;
+}
+
+.dedicamos {
+   padding: 0 0 94px 0;
+}
+
+.imagen {
+   list-style: none;
+}
+
+.dedicate {
+   position: relative;
+   width: 370px;
+   height: 294px;
+}
+
+.dedicate>h3 {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   padding: 27px 0;
+   bottom: 0;
+   font-size: 14px;
+   color: var(--color5);
+   background-color: rgba(47, 48, 58, 0.8);
+   width: 370px;
+   height: 70px;
+   ;
+}
+
+
+/*--------------------------- -------------------Nuetro equipo-------------------------------------------------*/
+.equipo {
+   background: #F5F4FA;
+   padding: 94px;
+}
+
+.equipo h2 {
+   color: var(--color2);
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.16;
+   margin-bottom: 50px;
+}
+
+.asesores h3 {
+   color: var(--color2);
+   font-size: 16px;
+   line-height: 1.18;
+   font-weight: 500;
+   background-color: #FFFFFF;
+}
+
+.asesores p {
+   color: var(--color3);
+   font-size: 16px;
+   line-height: 1.18;
+   font-weight: 400;
+}
+
+
+/*----------------------------------------------------pie de pagina---------------------------------------*/
+.final {
+   background-color: var(--color4);
+}
+
+.contacto .ubicacion {
+   color: var(--color5);
+   font-size: 14px;
+   font-weight: 400;
+   text-decoration: none;
+   line-height: 1.71;
+}
+
+.contacto .correo {
+   color: var(--color6);
+   font-size: 14px;
+   font-weight: 400;
+   text-decoration: none;
+   line-height: 1.71;
+}
+
+.contacto .telefono {
+   color: var(--color6);
+   font-size: 14px;
+   font-weight: 400;
+   text-decoration: none;
+   line-height: 1.71;
+}
+
+
+/*--------------------------------------------portafolio botones--------------------------------------------*/
+.portafolio {
+   padding: 94px 0;
+}
+
+.menu {
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.62;
+   color: var(--color5);
+   padding-bottom: 50px;
+}
+
+.proyect h3 {
+   color: var(--color2);
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 2;
+}
+
+.menu p {
+   font-size: 16;
+   font-weight: 400;
+   line-height: 1.87;
+   color: var(--color3);
+
+}
+
+.menu :hover {
+   color: var(--color3)
+}
+
+.cards:hover {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+/*----------------------------------------------------flex box index html------------------------------------*/
+.header-nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80px;
+}
+
+.navigation-list {
+   display: flex;
+   margin: 50px;
+}
+
+.navegation {
+   margin: 30px;
+}
+
+.contact-section {
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+}
+
+.email {
+   margin: 20px;
+}
+
+.h1 {
+   width: 696px;
+   height: 120;
+}
+
+.titulo {
+   height: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.boton1 {
+   width: 261px;
+   height: 50px;
+   margin: 40px;
+}
+
+.encabezado {
+   display: flex;
+   justify-content: space-between;
+}
+
+.encabezado .p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.list-ventajas {
+   margin-right: 30px;
+}
+
+.dedicamos {
+   text-align: center;
+}
+
+.imagen {
+   display: flex;
+   /*align-items: center;*/
+   justify-content: space-between;
+}
+
+
+.asesores {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.equipo {
+   text-align: center;
+}
+
+/*-----------------------------------------------------flex box portafolio-----------------------------------*/
+
+.header-nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80px;
+}
+
+.menu {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+
+.button-list {
+   padding: 8px;
+}
+
+.proyect {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 27px;
+}
+
+.contacto-footer {
+   padding: 0px;
+}
+
+.final {
+   padding: 70px;
+}
+
+.botton-menu {
+   border-radius: 4px;
+   padding: 6px 24px;
+   border: none;
+   background-color: #F5F4FA;
+   transition: background-color 250ms var(--transition-timing-function), color 250ms var(--transition-timing-function);
+}
+
+
+.botton-menu:hover {
+   color: #FFFFFF;
+   background-color: #2196F3;
+   border-radius: 4px;
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/*----------------------------------------Efectos y elementos icont contacnt---------------------------------*/
+
+.icon-contant {
+   width: 16px;
+   height: 12px;
+   fill: var(--color3);
+   margin-right: 10px;
+
+}
+
+
+
+.email :hover {
+   color: #2196F3;
+}
+
+.email :hover .icon-contant {
+   fill: #2196F3;
+}
+
+.container-ventajas {
+   width: 270px;
+   height: 120px;
+   background-color: #F5F4FA;
+   padding: 25px 102.34px;
+   margin-bottom: 30px;
+   border-radius: 4px;
+
+}
+
+.icon-ventajas {
+   width: 65.32px;
+   height: 70px;
+}
+
+
+
+/*------------------------------------------------------Nuestro equipo----------------------------------*/
+.our-tem {
+   display: flex;
+   justify-content: space-around;
+   padding: 0px 32px 30px 32px
+}
+
+.red {
+   width: 20px;
+   height: 20px;
+   fill: #AFB1B8;
+
+}
+
+.our-icon {
+   height: 44px;
+   width: 44px;
+   background-color: #FFFFFF;
+   border-radius: 50%;
+   padding: 12px;
+   transition: background-color 250ms var(--transition-timing-function);
+}
+
+.nombre h3 {
+   margin: 30px 0px 10px 0px
+}
+
+.our-icon:hover {
+   background-color: #2196F3;
+}
+
+.our-icon:hover .red {
+   fill: #FFFFFF;
+}
+
+
+/*-----------------------------------------------------------footer------------------------------------------*/
+.container-footer {
+   display: flex;
+   gap: 70px;
+
+}
+
+.social-midia {
+   width: 20px;
+   height: 20px;
+   fill: #FFFFFF;
+}
+
+.media-icons h3 {
+   color: #FFFFFF;
+   margin-bottom: 16px;
+   font-size: 14px;
+   font-weight: 700px;
+}
+
+.media-icons {
+   width: 250px;
+}
+
+.icono-redes {
+   display: inline-block;
+   width: 44px;
+   height: 44px;
+   background-color: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
+   padding: 12px;
+   transition: background-color 250ms var(--transition-timing-function);
+}
+
+.icono-redes:hover {
+   background-color: #2196F3;
+}
+
+
+/*----------------------------------------------------logo icons---------------------------------------------*/
+
+.container-logos h3 {
+   width: 323px;
+   height: 36.98px;
+   font-size: 36px;
+   display: flex;
+   color: #212121
+}
+
+.container-logos {
+   display: flex;
+
+   height: 335px;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.logo-icon {
+   display: flex;
+   gap: 30px;
+}
+
+.icono-company {
+   width: 106px;
+   height: 52.83px;
+   fill: #AFB1B8;
+   transition: fill 250ms var(--transition-timing-function);
+}
+
+.container-logos {
+   gap: 20px;
+}
+
+.rectangulo {
+   border: 1px #AFB1B8 solid;
+   border-radius: 4px;
+   width: 170px;
+   height: 81px;
+   padding: 14px 32px;
+   transition: border-color 250ms var(--transition-timing-function);
+
+}
+
+
+
+
+.rectangulo:hover {
+   border-color: #2196F3;
+}
+
+.rectangulo:hover .icono-company {
+   fill: #2196F3
+}
+
+
+/*----------------------------------------Animaciones portafolio-------------------------------------------*/
+
+
+.animation-2 {
+   position: absolute;
+   top: 0px;
+   height: 294px;
+   width: 370px;
+   background: rgba(33, 150, 243, 0.9);
+   padding: 63px 24px;
+   letter-spacing: 0.03cm;
+   color: #FFFFFF;
+   transform: translatey(105%);
+   transition: transform 250ms ease;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.card-image-2:hover .animation-2 {
+   transform: translatey(0%)
+}
+
+
+.card-image-2 {
+   position: relative;
+   overflow: hidden;
+
+}
+
+
+.backdrop {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.modal {
+   position: fixed;
+
+   justify-content: right;
+   align-items: right;
+   width: 528px;
+   height: 581px;
+   background-color: #FFFFFF;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 40px;
+
+}
+
+.titulo-modal {
+
+   width: 448px;
+   height: 23px;
+   top: 261px;
+   left: 576px;
+   font-size: 20px;
+   align-items: center;
+
+}
+
+.modal-form {
+
+   display: block;
+   font-size: 12px;
+   color:
+      #757575;
+}
+
+.border-formulario {
+   border-radius: 4px;
+   margin: 4px;
+   width: 448px;
+   height: 40px;
+   margin-bottom: 10px;
+   padding-left: 42px;
+
+}
+
+
+
+
+
+
+.modal-phone {
+   margin: 4px;
+   display: block;
+   font-size: 12px;
+   color: #757575;
+
+}
+
+
+
+.border-telefono {
+   width: 448px;
+   height: 40px;
+
+   border-radius: 4px;
+   margin-bottom: 10px;
+   padding-left: 42px;
+}
+
+.modal-email {
+   width: 41px;
+   height: 14px;
+   font-size: 12px;
+   color: #757575;
+   display: block;
+   margin: 4px;
+}
+
+.border-email {
+   width: 448px;
+   height: 40px;
+   border-radius: 4px;
+   margin-bottom: 10px;
+   padding-left: 42px;
+}
+
+
+
+.tarea {
+   width: 70px;
+   height: 14px;
+   font-size: 12px;
+   color: #757575;
+   display: block;
+   margin: 4px;
+}
+
+.tex-coment {
+   width: 448px;
+   height: 120px;
+   border-radius: 4px;
+
+}
+
+
+.checkbox {
+   width: 16px;
+   height: 15px;
+   top: 663px;
+   left: 588px;
+
+
+}
+
+.aceptacion {
+   width: 400px;
+   height: 24px;
+   top: 658px;
+   left: 612px;
+   color:
+      #757575;
+
+
+}
+
+.envia {
+   width: 200px;
+   height: 50px;
+   border-radius: 4px;
+   background-color: #188CE8;
+   color: #FFFFFF;
+   font-size: 16px;
+   transform: translatex(110px);
+
+}
+
+.info {
+   margin: 10px;
+}
+
+
+
+
+.boton-cerrar {
+   display: flex;
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   padding: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+   margin: 8px;
+   background-color: #FFFFFF;
+   top: 8px;
+   right: 8px;
+}
+
+.is-hidden {
+   display: none;
+}
+
+
+.inscripciones {
+   display: flex;
+   margin-bottom: 20px;
+   color: #F5F4FA;
+}
+
+.icon-men {
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   top: 14px;
+   left: 15px;
+}
+
+.icon-relative {
+   position: relative;
+
+}
+
+.suscribase {
+
+   color:
+      #FFFFFF;
+   font-size: 14px;
+   font-weight: 700;
+   margin-bottom: 20px;
+
+}
+
+.user-email {
+   width: 358px;
+   height: 50px;
+   border-radius: 4px;
+   background-color: #2F303A;
+   color: #FFFFFF99;
+
+}
+
+.button-footer {
+   width: 200px;
+   height: 50px;
+   border-radius: 4px;
+   background-color: #2196F3;
+   color: #FFFFFF;
+   font-size: 16px;
+
+
+
+}
+
+.boletin {
+   display: flex;
+   gap: 12px;
+}
+
+
+.send-cono {
+   position: absolute;
+   width: 24px;
+   height: 24px;
+   fill: #FFFFFF;
+   margin-left: 20px;
+
+}
+
+
+
+
+
+
+
+
+.icon-phone {
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   top: 14px;
+   left: 15px;
+}
+
+.phone-usuario {
+   position: relative;
+}
+
+.icon-correo {
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   top: 14px;
+   left: 15px;
+}
+
+.icon-enviar {
+   position: relative;
+}
+
+.icon-relative:hover {
+   fill: #2196F3;
+}
+
+.border-formulario:hover {
+   border: solid #2196F3;
+}
+
+.phone-usuario:hover {
+   fill: #2196F3;
+}
+
+.border-telefono:hover {
+   border: solid #2196F3;
+
+}
+
+.icon-enviar:hover {
+   fill: #2196F3;
+}
+
+.border-email:hover {
+   border: solid #2196F3;
+}
